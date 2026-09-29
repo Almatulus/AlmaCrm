@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
+
   vite: {
     optimizeDeps: {
       include: ["naive-ui", "vueuc"],
@@ -10,4 +11,6 @@ export default defineNuxtConfig({
       noExternal: ["naive-ui", "vueuc"],
     },
   },
+
+  modules: ["@nuxtjs/tailwindcss"],
 });
