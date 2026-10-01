@@ -13,6 +13,8 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     NButton: typeof import('naive-ui')['NButton']
+    NCard: typeof import('naive-ui')['NCard']
+    NImage: typeof import('naive-ui')['NImage']
     NLayout: typeof import('naive-ui')['NLayout']
     NLayoutHeader: typeof import('naive-ui')['NLayoutHeader']
     NLayoutSider: typeof import('naive-ui')['NLayoutSider']
@@ -25,6 +27,8 @@ declare module 'vue' {
 // For TSX support
 declare global {
   const NButton: typeof import('naive-ui')['NButton']
+  const NCard: typeof import('naive-ui')['NCard']
+  const NImage: typeof import('naive-ui')['NImage']
   const NLayout: typeof import('naive-ui')['NLayout']
   const NLayoutHeader: typeof import('naive-ui')['NLayoutHeader']
   const NLayoutSider: typeof import('naive-ui')['NLayoutSider']
