@@ -13,7 +13,7 @@ const menuOptions = [
 
     <n-layout has-sider>
       <n-layout-sider>
-        <n-menu :options="menuOptions"></n-menu>
+        <AppSidebar :menu-options="menuOptions" />
       </n-layout-sider>
 
       <n-layout> Content </n-layout>
