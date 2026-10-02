@@ -12,6 +12,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    NAvatar: typeof import('naive-ui')['NAvatar']
     NButton: typeof import('naive-ui')['NButton']
     NCard: typeof import('naive-ui')['NCard']
     NImage: typeof import('naive-ui')['NImage']
@@ -26,6 +27,7 @@ declare module 'vue' {
 
 // For TSX support
 declare global {
+  const NAvatar: typeof import('naive-ui')['NAvatar']
   const NButton: typeof import('naive-ui')['NButton']
   const NCard: typeof import('naive-ui')['NCard']
   const NImage: typeof import('naive-ui')['NImage']
