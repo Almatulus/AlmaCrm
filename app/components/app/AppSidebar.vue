@@ -1,9 +1,30 @@
 <script setup lang="ts">
-import type { MenuOption } from "naive-ui";
-
-defineProps<{
-  menuOptions: MenuOption[];
-}>();
+const menuOptions = [
+  {
+    label: "Главная",
+    key: "home",
+  },
+  {
+    label: "Сотрудники",
+    key: "employees",
+  },
+  {
+    label: "Товары",
+    key: "goods",
+  },
+  {
+    label: "Отчеты",
+    key: "reports",
+  },
+  {
+    label: "Статистика",
+    key: "statistics",
+  },
+  {
+    label: "Каналы продаж",
+    key: "channels",
+  },
+];
 </script>
 
 <template>
@@ -14,6 +35,6 @@ defineProps<{
         src="https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg"
       />
     </div>
-    <n-menu :options="menuOptions"></n-menu>
+    <AppMenu :menu-options="menuOptions" />
   </div>
 </template>
