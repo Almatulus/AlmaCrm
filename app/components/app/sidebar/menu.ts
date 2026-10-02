@@ -1,5 +1,6 @@
-<script setup lang="ts">
-const menuOptions = [
+import type { MenuOption } from "naive-ui";
+
+export const menuOptions: MenuOption[] = [
   {
     label: "Главная",
     key: "home",
@@ -25,14 +26,3 @@ const menuOptions = [
     key: "channels",
   },
 ];
-</script>
-
-<template>
-  <div class="min-h-screen bg-[#282735]">
-    <NuxtLink to="/">
-      <AppLogo />
-    </NuxtLink>
-
-    <AppMenu :menu-options="menuOptions" />
-  </div>
-</template>
