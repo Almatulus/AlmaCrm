@@ -33,6 +33,6 @@ const menuOptions = [
       <AppLogo />
     </NuxtLink>
 
-    <n-menu :options="menuOptions"></n-menu>
+    <AppMenu :menu-options="menuOptions" />
   </div>
 </template>
