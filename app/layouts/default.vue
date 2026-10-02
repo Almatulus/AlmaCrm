@@ -1,6 +1,6 @@
 <template>
   <n-layout>
-    <n-layout-header> Header </n-layout-header>
+    <AppHeader />
 
     <n-layout has-sider>
       <n-layout-sider>
