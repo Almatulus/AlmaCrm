@@ -8,6 +8,6 @@ import { menuOptions } from "./menu";
       <AppLogo />
     </NuxtLink>
 
-    <SidebarMenu :menu-options="menuOptions" />
+    <AppMenu :menu-options="menuOptions" />
   </div>
 </template>
