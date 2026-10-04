@@ -1,20 +1,18 @@
 <template>
-  <n-layout-header bordered>
-    <div class="flex justify-between items-center p-3">
-      <div class="flex items-center">
-        <n-avatar
-          round
-          :size="48"
-          src="https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg"
-        />
-        <div class="ml-4 font-bold">
-          <p class="text-sm text-gray-500">Admin</p>
-          <p class="text-lg">Almat</p>
-        </div>
-      </div>
-      <div>
-        <n-button>Выход</n-button>
+  <div class="flex justify-between items-center p-3">
+    <div class="flex items-center">
+      <n-avatar
+        round
+        :size="48"
+        src="https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg"
+      />
+      <div class="ml-4 font-bold">
+        <p class="text-sm text-gray-500">Admin</p>
+        <p class="text-lg">Almat</p>
       </div>
     </div>
-  </n-layout-header>
+    <div>
+      <n-button>Выход</n-button>
+    </div>
+  </div>
 </template>
