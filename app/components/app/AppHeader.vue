@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { LogOut } from "@vicons/ionicons5";
+</script>
+
 <template>
   <div class="flex justify-between items-center p-3">
     <div class="flex items-center">
@@ -11,8 +15,13 @@
         <p class="text-lg">Almat</p>
       </div>
     </div>
-    <div>
-      <n-button>Выход</n-button>
-    </div>
+    <n-button color="primary">
+      <template #icon>
+        <n-icon>
+          <LogOut />
+        </n-icon>
+      </template>
+      Выйти
+    </n-button>
   </div>
 </template>
