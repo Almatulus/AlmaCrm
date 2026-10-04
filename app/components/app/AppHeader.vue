@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import { LogOut } from "@vicons/ionicons5";
-</script>
-
 <template>
   <div class="flex justify-between items-center p-3">
     <div class="flex items-center">
@@ -15,11 +11,9 @@ import { LogOut } from "@vicons/ionicons5";
         <p class="text-lg">Almat</p>
       </div>
     </div>
-    <n-button color="primary">
+    <n-button>
       <template #icon>
-        <n-icon>
-          <LogOut />
-        </n-icon>
+        <UiIcon name="logout" />
       </template>
       Выйти
     </n-button>
