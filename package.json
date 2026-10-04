@@ -18,6 +18,7 @@
     "vue-router": "^5.3.1"
   },
   "devDependencies": {
+    "@vicons/ionicons5": "^0.13.0",
     "unplugin-vue-components": "^32.1.0"
   }
 }
