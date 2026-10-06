@@ -6,13 +6,14 @@ definePageMeta({
 
 <template>
   <n-form require-mark-placement="right-hanging">
-    <n-form-item label="Email">
-      <n-input placeholder="Введите email" clearable />
-    </n-form-item>
+    <UiField label="Email" placeholder="Введите email" />
 
-    <n-form-item label="Пароль">
-      <n-input type="password" placeholder="Введите пароль" clearable />
-    </n-form-item>
+    <UiField
+      type="password"
+      label="Пароль"
+      placeholder="Введите пароль"
+      clearable
+    />
 
     <n-form-item>
       <n-button type="primary" class="w-full">
