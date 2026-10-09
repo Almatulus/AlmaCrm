@@ -6,14 +6,14 @@ definePageMeta({
 
 <template>
   <n-form require-mark-placement="right-hanging">
-    <BaseField label="Email" placeholder="Введите email" />
+    <h1
+      class="mb-6 text-2xl font-bold tracking-tight text-purple-600 text-center"
+    >
+      Войти
+    </h1>
+    <BaseField label="Email" placeholder="example@gmail.com" />
 
-    <BaseField
-      type="password"
-      label="Пароль"
-      placeholder="Введите пароль"
-      clearable
-    />
+    <BaseField type="password" label="Пароль" placeholder="" clearable />
 
     <n-button type="primary" class="w-full">
       <template #icon>
@@ -21,5 +21,12 @@ definePageMeta({
       </template>
       Войти
     </n-button>
+
+    <NuxtLink
+      to="/register"
+      class="mt-4 block text-center text-sm text-gray-500 transition-colors hover:text-purple-600"
+    >
+      Нет аккаунта? Зарегистрируйтесь
+    </NuxtLink>
   </n-form>
 </template>
