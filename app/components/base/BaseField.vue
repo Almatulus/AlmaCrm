@@ -5,12 +5,16 @@ defineProps<{
   label?: string;
   placeholder?: string;
   type?: "text" | "password" | "textarea";
+  path?: string;
 }>();
+
+const model = defineModel<string>();
 </script>
 
 <template>
-  <n-form-item :label="label">
+  <n-form-item :label="label" :path="path">
     <n-input
+      v-model:value="model"
       :type="type"
       :placeholder="placeholder"
       show-password-on="click"
