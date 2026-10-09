@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Glasses, GlassesOutline } from "@vicons/ionicons5";
+
 defineProps<{
   label?: string;
   placeholder?: string;
@@ -8,6 +10,18 @@ defineProps<{
 
 <template>
   <n-form-item :label="label">
-    <n-input :type="type" :placeholder="placeholder" clearable />
+    <n-input
+      :type="type"
+      :placeholder="placeholder"
+      show-password-on="click"
+      clearable
+    >
+      <template #password-visible-icon>
+        <n-icon :size="16" :component="GlassesOutline" />
+      </template>
+      <template #password-invisible-icon>
+        <n-icon :size="16" :component="Glasses" />
+      </template>
+    </n-input>
   </n-form-item>
 </template>
