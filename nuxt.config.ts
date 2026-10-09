@@ -12,8 +12,9 @@ export default defineNuxtConfig({
   vite: {
     plugins: [
       Components({
+        dirs: [],
         resolvers: [NaiveUiResolver()],
-        dts: true,
+        dts: false,
       }),
     ],
 

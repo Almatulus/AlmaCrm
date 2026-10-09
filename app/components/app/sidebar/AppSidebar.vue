@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { menuOptions } from "./menu";
+import { menuOptions } from "./sidebar-menu.ts";
 </script>
 
 <template>

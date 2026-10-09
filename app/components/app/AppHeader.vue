@@ -13,7 +13,7 @@
     </div>
     <n-button>
       <template #icon>
-        <UiIcon name="logout" />
+        <BaseIcon name="logout" />
       </template>
       Выйти
     </n-button>

@@ -6,22 +6,20 @@ definePageMeta({
 
 <template>
   <n-form require-mark-placement="right-hanging">
-    <UiField label="Email" placeholder="Введите email" />
+    <BaseField label="Email" placeholder="Введите email" />
 
-    <UiField
+    <BaseField
       type="password"
       label="Пароль"
       placeholder="Введите пароль"
       clearable
     />
 
-    <n-form-item>
-      <n-button type="primary" class="w-full">
-        <template #icon>
-          <UiIcon name="logout" />
-        </template>
-        Войти
-      </n-button>
-    </n-form-item>
+    <n-button type="primary" class="w-full">
+      <template #icon>
+        <BaseIcon name="login" />
+      </template>
+      Войти
+    </n-button>
   </n-form>
 </template>
