@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from "vue";
-import type { FormInst, FormRules } from "naive-ui";
-import { isValidEmail } from "#imports";
+import type { FormRules } from "naive-ui";
 
 definePageMeta({
   layout: "auth",
@@ -12,34 +10,12 @@ const form = ref({
   password: "",
 });
 
-const formRef = ref<FormInst | null>(null);
+const { email, required, formRef } = useValidator();
 
 const rules: FormRules = {
-  email: [
-    {
-      required: true,
-      message: "Поле Email обязательно",
-      trigger: "blur",
-    },
-    {
-      validator: (_, value: string) => isValidEmail(value),
-      message: "Введите корректный email",
-      trigger: "input",
-    },
-  ],
-
-  password: [
-    {
-      required: true,
-      message: "Поле Пароль обязательно",
-      trigger: "blur",
-    },
-  ],
+  email: [required("Email"), email()],
+  password: [required("Пароль")],
 };
-
-const isFormValid = computed(() => {
-  return isValidEmail(form.value.email) && form.value.password.length > 0;
-});
 </script>
 
 <template>
@@ -71,7 +47,7 @@ const isFormValid = computed(() => {
       clearable
     />
 
-    <n-button :disabled="!isFormValid" type="primary" class="w-full">
+    <n-button type="primary" class="w-full">
       <template #icon>
         <BaseIcon name="login" />
       </template>
