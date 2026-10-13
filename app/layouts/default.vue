@@ -8,7 +8,9 @@
         <AppHeader />
       </n-layout-header>
 
-      <n-layout-content class="p-4"> Content </n-layout-content>
+      <n-layout-content class="p-4">
+        <NuxtPage />
+      </n-layout-content>
     </n-layout>
   </n-layout>
 </template>

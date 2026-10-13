@@ -1,6 +1,6 @@
 import { type MenuOption, NIcon } from "naive-ui";
-import { h } from "vue";
-import type { Component } from "vue";
+import { h, type Component } from "vue";
+import { NuxtLink } from "#components";
 import {
   HomeOutline,
   PeopleOutline,
@@ -19,32 +19,32 @@ function renderIcon(icon: Component) {
 
 export const menuOptions: MenuOption[] = [
   {
-    label: "Главная",
+    label: () => h(NuxtLink, { to: "/" }, () => "Главная"),
     key: "home",
     icon: renderIcon(HomeOutline),
   },
   {
-    label: "Сотрудники",
+    label: () => h(NuxtLink, { to: "/employees" }, () => "Сотрудники"),
     key: "employees",
     icon: renderIcon(PeopleOutline),
   },
   {
-    label: "Товары",
+    label: () => h(NuxtLink, { to: "/goods" }, () => "Товары"),
     key: "goods",
     icon: renderIcon(CubeOutline),
   },
   {
-    label: "Отчеты",
+    label: () => h(NuxtLink, { to: "/reports" }, () => "Отчеты"),
     key: "reports",
     icon: renderIcon(DocumentTextOutline),
   },
   {
-    label: "Статистика",
+    label: () => h(NuxtLink, { to: "/statistics" }, () => "Статистика"),
     key: "statistics",
     icon: renderIcon(BarChartOutline),
   },
   {
-    label: "Каналы продаж",
+    label: () => h(NuxtLink, { to: "/channels" }, () => "Каналы продаж"),
     key: "channels",
     icon: renderIcon(StorefrontOutline),
   },
