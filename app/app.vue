@@ -5,7 +5,7 @@ import { naiveThemeOverrides } from "~/config/naive-ui";
 <template>
   <div>
     <n-config-provider :theme-overrides="naiveThemeOverrides">
-      <NuxtLayout>
+      <NuxtLayout name="default">
         <NuxtPage />
       </NuxtLayout>
     </n-config-provider>
