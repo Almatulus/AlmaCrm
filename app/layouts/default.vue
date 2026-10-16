@@ -8,7 +8,7 @@
         <AppHeader />
       </n-layout-header>
 
-      <n-layout-content class="p-4">
+      <n-layout-content class="p-4 bg-[#F1F0FE] h-full">
         <NuxtPage />
       </n-layout-content>
     </n-layout>
