@@ -100,19 +100,10 @@ const columns: DataTableColumns<Employee> = [
 
 <template>
   <div class="flex min-h-full flex-col gap-6">
-    <header
-      class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
-    >
-      <div>
-        <h1 class="text-2xl font-bold tracking-tight text-gray-900">
-          Права доступа
-        </h1>
-
-        <p class="mt-1 text-sm text-gray-500">
-          Управление сотрудниками и их доступом к системе
-        </p>
-      </div>
-    </header>
+    <AppPageHeader
+      title="Права доступа"
+      subtitle="Управление сотрудниками и их доступом к системе"
+    />
 
     <n-data-table
       :columns="columns"
