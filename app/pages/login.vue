@@ -47,12 +47,7 @@ const rules: FormRules = {
       clearable
     />
 
-    <n-button type="primary" class="w-full">
-      <template #icon>
-        <BaseIcon name="login" />
-      </template>
-      Войти
-    </n-button>
+    <BaseButton type="primary" class="w-full" icon="login"> Войти </BaseButton>
 
     <NuxtLink
       to="/register"

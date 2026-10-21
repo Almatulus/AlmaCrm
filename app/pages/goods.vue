@@ -216,12 +216,13 @@ const outOfStock = computed(() => products.filter((p) => p.stock === 0).length);
 <template>
   <div class="flex min-h-full flex-col gap-6">
     <AppPageHeader title="Список товаров" subtitle="Управление списком товаров">
-      <n-button type="primary" @click="console.log('Добавить товар')">
-        <template #icon>
-          <AddOutline />
-        </template>
+      <BaseButton
+        type="primary"
+        icon="add"
+        @click="console.log('Добавить товар')"
+      >
         Добавить товар
-      </n-button>
+      </BaseButton>
     </AppPageHeader>
 
     <!-- Статистика -->

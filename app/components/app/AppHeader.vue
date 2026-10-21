@@ -10,11 +10,6 @@ const profile = {
   <div class="flex justify-between items-center p-3">
     <AppProfile :profile="profile" />
 
-    <n-button>
-      <template #icon>
-        <BaseIcon name="logout" />
-      </template>
-      Выйти
-    </n-button>
+    <BaseButton icon="logout">Выйти</BaseButton>
   </div>
 </template>

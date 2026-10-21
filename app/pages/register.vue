@@ -76,7 +76,7 @@ const rules: FormRules = {
       placeholder=""
     />
 
-    <n-button type="primary" class="w-full"> Зарегистрироваться </n-button>
+    <BaseButton type="primary" class="w-full"> Зарегистрироваться </BaseButton>
 
     <NuxtLink
       to="/login"
