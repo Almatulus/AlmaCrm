@@ -227,53 +227,11 @@ const outOfStock = computed(() => products.filter((p) => p.stock === 0).length);
 
     <!-- Статистика -->
     <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
-      <n-card :bordered="false" class="rounded-xl shadow-sm">
-        <div class="flex items-center justify-between">
-          <div>
-            <p class="text-sm text-gray-500">Всего товаров</p>
-            <p class="mt-2 text-2xl font-semibold text-gray-800">
-              {{ totalProducts }}
-            </p>
-          </div>
-          <div
-            class="flex h-11 w-11 items-center justify-center rounded-xl bg-purple-50 text-purple-600"
-          >
-            <CubeOutline class="h-6 w-6" />
-          </div>
-        </div>
-      </n-card>
+      <GoodsCard title="Всего товаров" :quantity="5" />
 
-      <n-card :bordered="false" class="rounded-xl shadow-sm">
-        <div class="flex items-center justify-between">
-          <div>
-            <p class="text-sm text-gray-500">Заканчиваются</p>
-            <p class="mt-2 text-2xl font-semibold text-orange-600">
-              {{ lowStock }}
-            </p>
-          </div>
-          <div
-            class="flex h-11 w-11 items-center justify-center rounded-xl bg-orange-50 text-orange-600"
-          >
-            <CubeOutline class="h-6 w-6" />
-          </div>
-        </div>
-      </n-card>
+      <GoodsCard title="Заканчиваются" :quantity="2" type="warning" />
 
-      <n-card :bordered="false" class="rounded-xl shadow-sm">
-        <div class="flex items-center justify-between">
-          <div>
-            <p class="text-sm text-gray-500">Нет в наличии</p>
-            <p class="mt-2 text-2xl font-semibold text-red-600">
-              {{ outOfStock }}
-            </p>
-          </div>
-          <div
-            class="flex h-11 w-11 items-center justify-center rounded-xl bg-red-50 text-red-600"
-          >
-            <CubeOutline class="h-6 w-6" />
-          </div>
-        </div>
-      </n-card>
+      <GoodsCard title="Нет в наличии" :quantity="1" type="danger" />
     </div>
 
     <!-- Таблица товаров -->

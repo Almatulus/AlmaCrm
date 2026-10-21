@@ -1,4 +1,10 @@
-import { LogOut, SettingsOutline, LogIn, AddOutline } from "@vicons/ionicons5";
+import {
+  LogOut,
+  SettingsOutline,
+  LogIn,
+  AddOutline,
+  CubeOutline,
+} from "@vicons/ionicons5";
 
 export type IconName = keyof typeof icons;
 
@@ -7,4 +13,5 @@ export const icons = {
   settings: SettingsOutline,
   login: LogIn,
   add: AddOutline,
+  cube: CubeOutline,
 };
